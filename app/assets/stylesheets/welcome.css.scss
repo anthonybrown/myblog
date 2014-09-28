@@ -6,4 +6,23 @@ body {
   font: 16px/1.5 'Ubuntu', Helvetica, sans-serif;
   color: #777;
   padding: 5em;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0 0 0.67em;
+  }
+  a {
+    text-decoration: none;
+    color: royalblue;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+  }
+  h1 {
+    margin: 0 auto 0.5em;
+  }
 }

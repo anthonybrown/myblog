@@ -1,3 +1,8 @@
+<nav>
+  <%= link_to 'Home', controller: 'welcome' %>
+  <%= link_to 'My Blog', controller: 'articles' %>
+  <%= link_to 'New article', new_article_path %>
+</nav>
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -7,3 +12,5 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
+
+<%= link_to 'Back', articles_path %>
