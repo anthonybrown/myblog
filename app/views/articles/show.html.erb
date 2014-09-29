@@ -1,16 +1,24 @@
-<nav>
-  <%= link_to 'Home', controller: 'welcome' %>
-  <%= link_to 'My Blog', controller: 'articles' %>
-  <%= link_to 'New article', new_article_path %>
-</nav>
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div id='wrap'>
+  <header>
+    <h1>Read</h1>
+    <nav>
+      <%= link_to 'Home', controller: 'welcome' %>
+      <%= link_to 'My Blog', controller: 'articles' %>
+      <%= link_to 'New article', new_article_path %>
+    </nav>
+  </header>
+  <section id='main' role='main-section'>
+    <p>
+      <strong>Title:</strong>
+      <%= @article.title %>
+    </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+    <p>
+      <strong>Text:</strong>
+      <%= @article.text %>
+    </p>
 
-<%= link_to 'Back', articles_path %>
+    <%= link_to 'Back', articles_path %>|
+    <%= link_to   'Edit',  edit_article_path(@article) %>
+  </section>
+</div>

@@ -1,6 +1,33 @@
-<h1>Tony Brown</h1>
-<p>Blog about JavaScript and Ruby mostly</p>
+<div id='wrap'>
+  <header role='banner'>
+    <h1>Tony Brown</h1>
+    <p>Blog about JavaScript and Ruby mostly</p>
+    <nav role='navigation'>
+      <%= link_to 'Home', controller: 'welcome' %>
+      <%= link_to 'My Blog', controller: 'articles' %>
+      <%= link_to 'New article', new_article_path %>
+    </nav>
+  </header>
 
-<%= link_to 'Home', controller: 'welcome' %>
-<%= link_to 'My Blog', controller: 'articles' %>
-<%= link_to 'New article', new_article_path %>
+  <section id="main" role='main-content'>
+    <h1>Main Content</h1>
+    <article id='main-content' class='articles'>
+      <p>
+        Welcome to my Blog, it's a Ruby on Rails / Backbone application.
+        I chose Backbone for it's amazing community and I love how it stays
+        out of my way.
+      </p>
+    </article>
+
+    <aside class='main-sidebar'>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">Prototypes</a></li>
+        <li><a href="#">Object.create</a></li>
+        <li><a href="#">New in ES6</a></li>
+        <li><a href="#">Handleing Backbone Model associations</a></li>
+        <li><a href="#">Handlebar vs Jade</a></li>
+      </ul>
+    </aside>
+  </section>
+</div>
